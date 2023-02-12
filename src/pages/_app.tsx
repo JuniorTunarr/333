@@ -7,7 +7,7 @@ export default function App({ Component, pageProps }: AppProps) {
     if ("serviceWorker" in navigator) {
       const registInit = async () => {
         const registration = await navigator.serviceWorker.register(
-          "/service-wroker.js"
+          "/service-worker.js"
         );
         registration.waiting?.postMessage("SKIP_WAITING");
       };
