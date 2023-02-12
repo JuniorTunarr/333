@@ -14,6 +14,7 @@ module.exports = withPlugins(
         pwa: {
           dest: "public",
           publicExcludes: ["!robots.txt", "!sitemap.xml.gz"],
+          swSrc: "service-worker.js",
         },
       },
     ],
